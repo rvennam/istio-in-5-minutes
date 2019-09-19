@@ -21,8 +21,10 @@ kubectl create namespace demo
 kubectl label namespace demo istio-injection=enabled
 ```
 
-## Install BookInfo sample
+### Install BookInfo sample
 ```
 kubectl apply -f ./samples/bookinfo/platform/kube/bookinfo.yaml -n demo
 ```
 
+## Routing
+Your BookInfo application has a `productpage` service which is the main 
